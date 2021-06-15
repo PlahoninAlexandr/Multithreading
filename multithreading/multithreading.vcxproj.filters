@@ -24,12 +24,18 @@
     <ClCompile Include="sqlite3.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sqlite3ext.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="sqlite3.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
