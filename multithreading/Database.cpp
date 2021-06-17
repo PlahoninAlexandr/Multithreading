@@ -6,7 +6,7 @@ int Database::openDB() {
 	if (rc) {
 		fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
 		sqlite3_close(db);
-		return(1);
+		return(0);
 	}
 }
 
@@ -40,7 +40,7 @@ void Database::randName(string& first_name, string& second_name, const int& size
 
 void Database::fillDatabase() {
 	cout << "fill db" << endl;
-	for (int i = 0, j = 999999999; i < 10; ++i, ----j) {
+	for (int i = 0, j = 999999999; i < size_db; ++i, ----j) {
 		int age = 0;
 		randAge(age, numbers, num_size);
 
@@ -65,4 +65,8 @@ void Database::fillDatabase() {
 
 void Database::closeDB() {
 	sqlite3_close(db);
+}
+
+int Database::getSizeDB() {
+	return size_db;
 }

@@ -12,9 +12,10 @@ private:
 	string query;
 	static const int num_size = 84;
 	const int let_size = 8;
+	const int size_db = 25;
 	int numbers[num_size];
-	vector<string> countrys = { "AUG", "AUT", "ARG", "BLR", "GTM", "DEU", "EGY", "RUS", "UKR", "USA", "JPN" };
 public:
+	vector<string> countrys = { "AUG", "AUT", "ARG", "BLR", "GTM", "DEU", "EGY", "RUS", "UKR", "USA", "JPN" };
 	sqlite3* db;
 	sqlite3_stmt* stmt;
 	char* err;
@@ -24,6 +25,7 @@ public:
 	int openDB();
 	void fillNumbers();
 	void fillDatabase();
+	int getSizeDB();
 private:
 	void randAge(int& age, const int arr[], const int& size);
 	void randCountry(string& country, vector<string>& vec, const int& size);
