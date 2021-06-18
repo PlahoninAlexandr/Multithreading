@@ -144,12 +144,14 @@
     <ClCompile Include="Selection.cpp" />
     <ClCompile Include="shell.c" />
     <ClCompile Include="sqlite3.c" />
+    <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Database.h" />
     <ClInclude Include="Selection.h" />
     <ClInclude Include="sqlite3.h" />
     <ClInclude Include="sqlite3ext.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

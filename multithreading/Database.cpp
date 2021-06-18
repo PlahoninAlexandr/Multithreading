@@ -25,13 +25,13 @@ void Database::randCountry(string& country, vector<string>& vec, const int& size
 }
 
 void Database::randName(string& first_name, string& second_name, const int& size) {
-	for (int i = 0, j = 0; i < size; i++) {
+	for (int i = 0, j = 0; i < size; ++i) {
 		j = rand() % 10 + 1;
 
 		if (j > size - i) j = size - i;
 		i += j;
 
-		for (int k = 0; k < j; k++) {
+		for (int k = 0; k < j; ++k) {
 			first_name += (char)(rand() % 26 + 97);
 			second_name += (char)(rand() % 26 + 97);
 		}
@@ -39,7 +39,7 @@ void Database::randName(string& first_name, string& second_name, const int& size
 }
 
 void Database::fillDatabase() {
-	cout << "fill db" << endl;
+	cout << "Fill database. Whait please." << endl;
 	for (int i = 0, j = 999999999; i < size_db; ++i, ----j) {
 		int age = 0;
 		randAge(age, numbers, num_size);

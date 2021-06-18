@@ -12,7 +12,7 @@ private:
 	string query;
 	static const int num_size = 84;
 	const int let_size = 8;
-	const int size_db = 25;
+	const int size_db = 1000;
 	int numbers[num_size];
 public:
 	vector<string> countrys = { "AUG", "AUT", "ARG", "BLR", "GTM", "DEU", "EGY", "RUS", "UKR", "USA", "JPN" };
